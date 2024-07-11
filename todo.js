@@ -70,6 +70,11 @@ function init() {   // 날짜를 새로 지정할 때마다 초기화
             toDoList.removeChild(child);
         }
     }
+    for (const a of toDoList.childNodes) { // 모든 자식노드 초기화
+        for(const child of toDoList.children){
+            toDoList.removeChild(child);
+        }
+    }
     arr = [];   // 자식 객체 저장하는 배열 초기화
 
     load();
