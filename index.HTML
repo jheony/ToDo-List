@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <h1>To-Do List</h1>
+    <link rel="stylesheet" href="style.css">
+    <script src="todo.js"></script>
+</head>
+
+<body>
+    <div id="grid">
+        <p id="day">날짜선택
+            <br><input type="date" id="dateInput" onchange="getDate(), init()" min="2024-07-10" max="2123-12-31">
+
+        </p>
+
+        <div id="TD">
+
+            <div id="dateOutput"></div>
+            <input id="todoInput" placeholder="할 일 추가" onkeypress="keyCheck()">
+
+            <input type="button" id="add" value="+" onclick="isEmptyAdd()">
+            <span></span>
+            <span></span>
+            </input>
+
+            <ul id="todoList">
+
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>
