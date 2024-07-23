@@ -3,9 +3,9 @@
         font-weight: 400;
         font-style: normal;    
 }
-body {
-    background-color: pink;
-}
+/* body {
+    background-color: pink; */
+/* } */
 
 /* 헤더 "To-Do List*/
 h1 {
@@ -21,8 +21,8 @@ h1 {
     border-right: 2.5px solid gray;
     width: 1fr;
     padding: 15px;
-    font-size: 15px;
-    margin: 0;
+    font-size: 20px;
+    
 }
 
 /* 입력 창 "할 일 추가" */
@@ -77,8 +77,6 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
-
-
 
 #dateOutput {
     height: 50px;
